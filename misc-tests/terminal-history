@@ -1,0 +1,57 @@
+sudo apt update
+    2  sudoedit /etc/gdm3/custom.conf
+    3  cat /etc/gdm3/custom.conf 
+    4  sudo systemctl restart gdm3
+    5  git clone https://github.com/shikhars22/mernLogin.git
+    6  sudo apt install git
+    7  git clone https://github.com/shikhars22/mernLogin.git
+    8  ls
+    9  cd mernLogin/
+   10  ls
+   11  npx create-react-app client
+   12  sudo apt install npm
+   13  sudo apt install npx
+   14  npx create-react-app client
+   15  sudo npm install -g yarn
+   16  npx create-react-app client
+   17  node -v
+   18  sudo apt-get remove nodejs
+   19  node -v
+   20  sudo apt update
+   21  curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+   22  cd ~
+   23  curl -sL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh
+   24  sudo apt install curl
+   25  curl -sL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh
+   26  nano nodesource_setup.sh
+   27  sudo bash nodesource_setup.sh
+   28  sudo apt install nodejs
+   29  node -v
+   30  sudo dpkg --configure -a
+   31  sudo apt install nodejs
+   32  sudo apt-get install -f
+   33  npm -v
+   34  history   35  npm -v
+   36  npx -v
+   37  yarn -v
+   38  sudo apt autoremove
+   39  npm -v
+   40  sudo bash nodesource_setup.sh
+   41  sudo apt install nodejs
+   42  node -v
+   43  npx create-react-app client
+   44  ls
+   45  cd client/
+   46  ls
+   47  cd ..
+   48  ls
+   49  rm client/
+   50  rmdir client/
+   51  rmdir -r client/
+   52  rmdir -rF client/
+   53  cd github/
+   54  ls
+   55  cd mernLogin/
+   56  ls
+   57  npx create-react-app client
+
