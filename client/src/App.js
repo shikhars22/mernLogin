@@ -6,27 +6,51 @@ function App() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
+  async function registerUser(event){
+    event.preventDefault()
+    const response = await fetch('https://localhost:1337/api/register' , {
+      method:'POST',
+      headers:{
+        'Content-Type': 'application/json'
+      },
+      body:JSON.stringify({
+        name,
+        email,
+        password,
+      })
+    })
+    const data = await response.json()
+    console.log(data)
+  }
+
   return (
     <div>
       <h1>Register</h1>
-      <form>
+      <form onSubmit={registerUser}>
         <input 
           value={name}
           onChange={(e) => setName(e.target.value)}
           type="text" 
           placeholder="Name"
         />
+        <br/><br/>
         <input  
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           type="email" 
           placeholder="Email"
         />
+        <br/><br/>
         <input  
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           type="password" 
           placeholder="Password"
+        />
+        <br/><br/>
+        <input  
+          value="Register"
+          type="submit"
         />
       </form>
     </div>
